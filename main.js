@@ -107,12 +107,80 @@
 //     let answer = weightT * 0.165;
 //     let converted = answer.toFixed(3);
 //     let converted2 = Number(converted)
+//     console.log(converted2)
 //     return converted2;
     
 //    }
+//     weightOnTheMoon(68)
+// function getWeightLossRatio(weightOnEarth, weightOnTheMoon) {
+//  let resultlmao = (weightOnTheMoon /weightOnEarth) * 125;
+//  console.log(resultlmao);  
+// }
+// getWeightLossRatio(60,30.855)
 
-function getWeightLossRatio(weightOnEarth, weightOnTheMoon) {
- let resultlmao = (weightOnTheMoon /weightOnEarth) * 125;
- console.log(resultlmao);  
+// function getWeightLossRatio(weightOnEarth, weightOnTheMoon) {
+  
+  
+//     // let weightT = weightOnEarth + 125;
+//     // let answer = weightT * 0.165;
+//     // let converted = answer.toFixed(3);
+//     // let converted2 = Number(converted)
+ 
+  
+//  let resultlmao = ((weightOnTheMoon - weightOnEarth) / weightOnEarth * 100).toFixed(1);
+//  let thisIT = Number(resultlmao);
+//  console.log(resultlmao)
+//  getWeightLossRatio(60,30.855)
+ 
+// }
+
+// function getWeightLossRatio(weightOnEarth, weightOnTheMoon) {
+  
+  
+//     // let weightT = weightOnEarth + 125;
+//     // let answer = weightT * 0.165;
+//     // let converted = answer.toFixed(3);
+//     // let converted2 = Number(converted)
+ 
+  
+//  let resultlmao = ((weightOnTheMoon - weightOnEarth) / weightOnEarth * 100).toFixed(1);
+//  let thisIT = Math.abs(Number(resultlmao));
+//  let printIT = `Weight on Earth: ${weightOnEarth} Weight on the Moon: ${weightOnTheMoon} Weight Loss Ratio: ${thisIT}`
+//  console.log(printIT);
+
+
+// } getWeightLossRatio(62,30.855)
+
+
+
+// function countSheeps2(arrayOfSheep) {
+//    for(i=0;i<arrayOfSheep; i++){ 
+//     if(arrayOfSheep == "1"){
+//     let counter = 0
+//     counter= counter+1;
+//     console.log(counter);  
+//     }
+      
+//    }
+   
+//   }
+
+
+// // countSheeps(['1','2','3','4','5','7'])
+// countSheeps2('1','1','1','4','5','7')// countSheeps([true, true, true, false])
+
+function lovefunc(flower1, flower2){
+  // moment of truth
+  
+  if(flower1%2==1 && flower2%2==0 ){  
+      return true;   
+  }
+  else{
+    return false;
+  }
 }
-getWeightLossRatio(60,30.855)
+
+lovefunc(1,4)
+// function lovefunc(flower1, flower2){
+//   return ((flower1%2==0 && flower2%2!=0) || (flower1%2!=0 && flower2%2==0)) ? true : false;
+// }
