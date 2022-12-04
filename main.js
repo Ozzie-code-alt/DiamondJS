@@ -169,18 +169,102 @@
 // // countSheeps(['1','2','3','4','5','7'])
 // countSheeps2('1','1','1','4','5','7')// countSheeps([true, true, true, false])
 
-function lovefunc(flower1, flower2){
-  // moment of truth
+// function lovefunc(flower1, flower2){
+//   // moment of truth
   
-  if(flower1%2==1 && flower2%2==0 ){  
-      return true;   
-  }
-  else{
-    return false;
-  }
-}
+//   if(flower1%2==1 && flower2%2==0 ){  
+//       return true;   
+//   }
+//   else{
+//     return false;
+//   }
+// }
 
-lovefunc(1,4)
+// lovefunc(1,4)
 // function lovefunc(flower1, flower2){
 //   return ((flower1%2==0 && flower2%2!=0) || (flower1%2!=0 && flower2%2==0)) ? true : false;
 // }
+// function greet (name, owner) {
+//   name == owner ? console.log('Hello boss') : console.log('Hello guest')
+//    return
+//  }
+//  greet('justin','justins')
+// function greet (name, owner) {
+//   return 1 (name == owner) ? console.log('Hello boss') : console.log('Hello guest')
+//  }
+
+//  greet('justin','justins')
+
+// function greet (name, owner) {
+// if(name == owner){
+//   return 'Hello boss'
+// }
+// else{
+//   return'Hello guest'
+// }
+// }
+// function greet (name, owner) {
+//   return name === owner ? 'Hello boss' : 	'Hello guest';
+// }
+// greet('justin','justins')
+
+// function simpleMultiplication(number) {
+//   // your code........
+// return (number %2 ==0) ? number * 8 : number * 9
+// }
+
+// simpleMultiplication(2)
+
+// var countSheep = function(num){
+//   //your code here 
+// for(let i=0;i<=num.length;i++){
+//   console.log("i")
+// }
+
+// }
+// // countSheep(4)
+
+// var countSheep = function (num){
+//   //your code here
+  
+//   let number =''
+//   for(i=0;i<num.length;i++){
+//     number+= (`${i}sheep...`)
+//   }
+//   return number
+// }
+// countSheep(5)
+// var countSheep = function (num){
+//   //your code here
+  
+//   let numberes =""
+//   for(let i=0;i<=num;i++){
+//     numberes+=`${i}sheep...`;
+//   }
+//   return numberes;
+// }
+
+// // var countSheep = function (num){
+// //   let str = "";
+// //   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+// //   return str;
+// // }
+// countSheep(7)
+
+function Numtot(n){
+  let total = []
+  let totolcv;
+  let counter = [];
+  console.log(typeof(total))
+  for(i=n;i>=1;--i){ 
+      counter+=i 
+      totolcv = Number(counter) 
+      console.log(totolcv)
+      
+    }
+    
+    
+  }
+  Numtot(10)
+
+
