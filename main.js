@@ -251,20 +251,46 @@
 // // }
 // countSheep(7)
 
-function Numtot(n){
-  let total = []
-  let totolcv;
-  let counter = [];
-  console.log(typeof(total))
-  for(i=n;i>=1;--i){ 
-      counter+=i 
-      totolcv = Number(counter) 
-      console.log(totolcv)
+// function Numtot(n){
+//   let total = []
+
+//   console.log(typeof(total))
+//   for(i=n;i>=1;--i){ 
       
-    }
+//       total.push(i)
+//     }
+//     return total
     
-    
-  }
-  Numtot(10)
+//   }
+//   Numtot(10)
 
 
+// function paperwork(n, m) {
+
+//   return math.sign(n) === math.sign(m) ? n * m : 0 
+//  }
+ 
+//  paperwork(5,5)
+
+// let num1 =8
+// let num2 =0
+
+// num1<= 0 || num2<=0 ? console.log("0") :console.log("world")
+
+// function solution(str, ending){
+//     // TODO: complete
+
+   
+//     let LastChar = str.charAt(str.length-1)
+
+//    return str.includes(LastChar)
+    
+//   }
+//   solution("hello","ello")
+
+const array1 = 'aba';
+
+
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
