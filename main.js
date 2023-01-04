@@ -288,18 +288,25 @@
 //   }
 //   solution("hello","ello")
 
-function highAndLow(numbers){
-    let numbers1 = numbers.split(" ").sort( function(a,b) {return a-b})
-    console.log(numbers1)
-    // let result = Object.keys(numbers1).map(function (key){
-    //     return[Number(key), numbers1[key]]
-    //     });
-    //         console.log(typeof(result))
-    console.log(numbers1[0])
-    let lastARR = numbers1[numbers1.length-1] //Gets the last array
-    console.log(lastARR)
-    return `${numbers1[0]} ${lastARR}}`;
+// function highAndLow(numbers){
+//     let numbers1 = numbers.split(" ").sort( function(a,b) {return a-b})
+//     console.log(numbers1)
+//     // let result = Object.keys(numbers1).map(function (key){
+//     //     return[Number(key), numbers1[key]]
+//     //     });
+//     //         console.log(typeof(result))
+//     console.log(numbers1[0])
+//     let lastARR = numbers1[numbers1.length-1] //Gets the last array
+//     console.log(lastARR)
+//     return `${numbers1[0]} ${lastARR}}`;
    
-}
+// }
 
-highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+// highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+
+let args =  [78,56,232,412,228];
+let converted = args.sort(function(a, b) {return a - b} );
+console.log(converted[0])
+    
+
+   
