@@ -304,9 +304,26 @@
 
 // highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
 
-let args =  [78,56,232,412,228];
-let converted = args.sort(function(a, b) {return a - b} );
-console.log(converted[0])
+// let args =  [78,56,232,412,228];
+// let converted = args.sort(function(a, b) {return a - b} );
+// console.log(converted[0])
+
+
+
+/****  Product of an ARRAY ******/
+
+function grow(x){
+    let total = 1;
+    for(let i=0; i<=x.length;i++){
+        if(typeof(x[i]) === "number"){
+     total *= parseInt(x[i])
+        }
+      
+    }
+    return total
+    }
+    
+    grow([4, 1, 1, 1, 4])
     
 
    
