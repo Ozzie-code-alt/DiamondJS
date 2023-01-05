@@ -419,6 +419,6 @@
 //    return Math.sqrt(n) % 1 === 0 ? true : false
 //  }
 let n=2
-let print = n**3
+let print = n**4
 console.log(print) 
   
