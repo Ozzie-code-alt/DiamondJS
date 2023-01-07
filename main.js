@@ -310,20 +310,24 @@
 
 
 
-/****  Product of an ARRAY ******/
+/******  Product of an ARRAY ******/
 
-function grow(x){
-    let total = 1;
-    for(let i=0; i<=x.length;i++){
-        if(typeof(x[i]) === "number"){
-     total *= parseInt(x[i])
-        }
+// function grow(x){
+//     let total = 1;
+//     for(let i=0; i<=x.length;i++){
+//         if(typeof(x[i]) === "number"){
+//      total *= parseInt(x[i])
+//         }
       
-    }
-    return total
-    }
+//     }
+//     return total
+//     }
     
-    grow([4, 1, 1, 1, 4])
+//     grow([4, 1, 1, 1, 4])
     
 
-   
+   /******  Check If boolean  ******/
+
+   function boolToWord( bool ){
+    return bool ? 'Yes':'No';
+  }
