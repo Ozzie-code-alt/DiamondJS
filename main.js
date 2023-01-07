@@ -328,6 +328,15 @@
 
    /******  Check If boolean  ******/
 
-   function boolToWord( bool ){
-    return bool ? 'Yes':'No';
+//    function boolToWord( bool ){
+//     return bool ? 'Yes':'No';
+//   }
+
+
+/******  Double The Number  ******/
+
+function doubleInteger(i) {
+    // i will be an integer. Double it and return it
+    i += i
+    return i;
   }
