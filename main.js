@@ -335,8 +335,10 @@
 
 /******  Double The Number  ******/
 
-function doubleInteger(i) {
-    // i will be an integer. Double it and return it
-    i += i
-    return i;
-  }
+// function doubleInteger(i) {
+//     // i will be an integer. Double it and return it
+//     i += i
+//     return i;
+//   }
+
+/******  Are you Playing Banjo? (Index)  ******/
