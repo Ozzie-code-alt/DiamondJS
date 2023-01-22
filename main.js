@@ -342,6 +342,19 @@
 //   }
 
 /******  Are you Playing Banjo? (Index)  ******/
-function areYouPlayingBanjo(name) {
-   return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
- }
+// function areYouPlayingBanjo(name) {
+//    return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+//  }
+
+
+/******  nested Loops 2d Array  ******/
+
+let arr = [[1,2,3], [4,5,6], [7,8,9]]
+
+for(let i = 0; i<arr.length; i++){
+   // console.log(`Index ${[i]}`) for index only
+   //console.log(arr[i]) for index value 
+   for(j=0;j<arr[i].length; j++){
+      console.log(arr[i][j])
+   }
+}
