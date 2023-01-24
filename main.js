@@ -369,7 +369,27 @@
 
 
 /******  Boolen Ternary  ******/
-function setAlarm(employed, vacation){
+// function setAlarm(employed, vacation){
 
-   return employed == true && vacation == false ? true : false 
- }
+//    return employed == true && vacation == false ? true : false 
+//  }
+
+
+
+/******  For Loop ascending   ******/
+
+// let array = [8,3,5,2,1,7,9,4]
+// let sorted = []
+
+// for(let i = 0;i<array.length;i++){
+//    for(j = i+ 1; j <array.length;j++){
+//       let a =[]
+//       if(array[i]> array[j]){
+//          a=array[i]
+//          array[i] = array[j]
+//          array[j] = a
+//       }
+//    } sorted.push(array[i])
+  
+// }
+// console.log(`Sorted array is ${sorted}`)
