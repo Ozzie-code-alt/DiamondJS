@@ -361,8 +361,11 @@
 
 /******  5 square   ******/
 
-for(i=0;i<5;i++){
-   for(j=0;j<= i;j++){
-      console.log("* &")
-   }
-}
+// for(i=0;i<5;i++){
+//    for(j=0;j<= i;j++){
+//       console.log("* &")
+//    }
+// }
+
+
+/******  Boolen Ternary  ******/
