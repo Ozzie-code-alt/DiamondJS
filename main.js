@@ -422,3 +422,8 @@
 // let print = n**4
 // console.log(print) 
   /* Are you playing the Banjo ? */
+  function areYouPlayingBanjo(name) {
+   // Implement me
+     
+   return name.codePointAt(0) == 82 || name.codePointAt(0) == 114 ? `${name} plays banjo` : `${name} does not play banjo`  
+ }
