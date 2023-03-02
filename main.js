@@ -430,7 +430,9 @@
 
 /* L1: Set Alarm */
 
-function setAlarm(employed, vacation){
+// function setAlarm(employed, vacation){
 
-   return employed == true && vacation == false ? true : false 
- }
+//    return employed == true && vacation == false ? true : false 
+//  }
+
+/*Parse nice int from char problem */
