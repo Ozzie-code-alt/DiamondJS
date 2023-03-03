@@ -437,11 +437,13 @@
 
 /*Parse nice int from char problem */
 
-let functionCode = (inputString) =>{
+// let functionCode = (inputString) =>{
    
-      // return the girl's correct age as an integer. Happy coding :) 
+//       // return the girl's correct age as an integer. Happy coding :) 
         
         
-        return Number(inputString.charAt(0)) 
+//         return Number(inputString.charAt(0)) 
       
-}
+// }
+
+/*Jaden Casing Strings */
