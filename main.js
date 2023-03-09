@@ -446,13 +446,15 @@
       
 // }
 
-/*Jaden Casing Strings */
-String.prototype.toJadenCase = function () {
-   //...
-   const words = this.split(" ");
-   const capitalizedWords = words.map(word => {
-     return word.charAt(0).toUpperCase() + word.slice(1);
-   });
-   return capitalizedWords.join(" ");
+// /*Jaden Casing Strings */
+// String.prototype.toJadenCase = function () {
+//    //...
+//    const words = this.split(" ");
+//    const capitalizedWords = words.map(word => {
+//      return word.charAt(0).toUpperCase() + word.slice(1);
+//    });
+//    return capitalizedWords.join(" ");
  
- };
+//  };
+
+/*You're a square!*/
