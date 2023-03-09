@@ -464,3 +464,8 @@
 //  }
 
 /*Grasshopper - Messi goals function*/
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+   // code goes here
+ 
+ return Number(laLigaGoals) + Number(copaDelReyGoals) + Number(championsLeagueGoals)
+ }
