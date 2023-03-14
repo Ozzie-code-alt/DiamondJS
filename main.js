@@ -402,12 +402,19 @@
 
 
 //* Jaden Case Strings, Convert every first letter word in a sentence to UpperCase*/
-String.prototype.toJadenCase = function () {
-   //...
-   const words = this.split(" ");
-   const capitalizedWords = words.map(word => {
-     return word.charAt(0).toUpperCase() + word.slice(1);
-   });
-   return capitalizedWords.join(" ");
+// String.prototype.toJadenCase = function () {
+//    //...
+//    const words = this.split(" ");
+//    const capitalizedWords = words.map(word => {
+//      return word.charAt(0).toUpperCase() + word.slice(1);
+//    });
+//    return capitalizedWords.join(" ");
  
- };
+//  };
+
+
+/*Finding the Squaroot and return if it is true or not  */
+
+var isSquare = function(n){
+   return Math.sqrt(n) % 1 === 0 ? true : false
+ }
