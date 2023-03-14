@@ -398,3 +398,16 @@
 
 /* added commit*/
 /*Added*/
+
+
+
+//* Jaden Case Strings, Convert every first letter word in a sentence to UpperCase*/
+String.prototype.toJadenCase = function () {
+   //...
+   const words = this.split(" ");
+   const capitalizedWords = words.map(word => {
+     return word.charAt(0).toUpperCase() + word.slice(1);
+   });
+   return capitalizedWords.join(" ");
+ 
+ };
