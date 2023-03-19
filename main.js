@@ -475,7 +475,9 @@ let twoSum = (setNumbers, Total) => {
 for(i=0;i<=setNumbers.length;i++){
 for(j=0; j<i;j++){
   if(setNumbers[i] + setNumbers[j] == Total){
-    console.log( i, j)
+    let container = [i,j]
+    console.log(container)
+    return container
   }
 }
 
