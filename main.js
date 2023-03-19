@@ -464,8 +464,23 @@
 //  }
 
 /*Grasshopper - Messi goals function*/
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-   // code goes here
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//    // code goes here
  
- return Number(laLigaGoals) + Number(copaDelReyGoals) + Number(championsLeagueGoals)
- }
+//  return Number(laLigaGoals) + Number(copaDelReyGoals) + Number(championsLeagueGoals)
+//  }
+
+/*Two Sum */
+let twoSum = (setNumbers, Total) => {
+for(i=0;i<=setNumbers.length;i++){
+for(j=0; j<i;j++){
+  if(Numbers[i] + Numbers[j] == Total){
+    console.log( i, j)
+  }
+}
+
+}
+
+
+}
+twoSum([1,2,3,4,5], 4)
