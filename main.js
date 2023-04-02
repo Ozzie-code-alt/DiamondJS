@@ -471,18 +471,34 @@
 //  }
 
 /*Two Sum */
-let twoSum = (setNumbers, Total) => {
-for(i=0;i<=setNumbers.length;i++){
-for(j=0; j<i;j++){
-  if(setNumbers[i] + setNumbers[j] == Total){
-    let container = [i,j]
-    console.log(container)
-    return container
-  }
-}
+// let twoSum = (setNumbers, Total) => {
+// for(i=0;i<=setNumbers.length;i++){
+// for(j=0; j<i;j++){
+//   if(setNumbers[i] + setNumbers[j] == Total){
+//     let container = [i,j]
+//     console.log(container)
+//     return container
+//   }
+// }
+
+// }
+
+
+// }
+// twoSum([1,2,3,4,5], 5)
+// Array Diff
+function arrayDiff(a, b) {
+  let newArr =[]
+for(i=0; i<a.length; i++){
+if(b.includes(a[i])){
+continue
+  
+}else{
+newArr.push(a[i])
 
 }
 
-
 }
-twoSum([1,2,3,4,5], 5)
+console.log(newArr)
+}
+arrayDiff([2,3,2,2,3], [2])
