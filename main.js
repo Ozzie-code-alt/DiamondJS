@@ -484,21 +484,36 @@
 // }
 
 
-// }
-// twoSum([1,2,3,4,5], 5)
-// Array Diff
-function arrayDiff(a, b) {
-  let newArr =[]
-for(i=0; i<a.length; i++){
-if(b.includes(a[i])){
-continue
+// // }
+// // twoSum([1,2,3,4,5], 5)
+// // Array Diff
+// function arrayDiff(a, b) {
+//   let newArr =[]
+// for(i=0; i<a.length; i++){
+// if(b.includes(a[i])){
+// continue
   
-}else{
-newArr.push(a[i])
+// }else{
+// newArr.push(a[i])
 
-}
+// }
 
+// }
+// console.log(newArr)
+// }
+// arrayDiff([2,3,2,2,3], [2])
+
+var minMaxGame = function(nums) {
+
+let newLength = nums.length / 2   
+
+let newArr =[]
+for(i=0;i<nums.length;i++){
+if(i % 2 ==0 && i < newLength){
+    newArr.push(nums[2 * i], nums[2 * i + 1]) // ask gpt why is it that it returns something else when i * 2 instead
 }
-console.log(newArr)
+  
 }
-arrayDiff([2,3,2,2,3], [2])
+console.log(newArr)  
+};
+minMaxGame([1,3,5,2,4,8,2,2])
