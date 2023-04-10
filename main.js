@@ -517,3 +517,29 @@ if(i % 2 ==0 && i < newLength){
 console.log(newArr)  
 };
 minMaxGame([1,3,5,2,4,8,2,2])
+
+// new variation for Leetcode 
+var minMaxGame = function(nums) {
+  let newArr = [] 
+  let finalnewArr = []
+  for(i=0;i < nums.length; i+=2){
+      newArr.push(nums.slice(i, i + 2));         
+  }
+  for(j=0;j<newArr.length;j++){
+     if(j % 2 == 0 ){
+        let  minValue = Math.min(...newArr[j])
+         finalnewArr.push(minValue)
+        
+     }
+      else if(j % 2 !==0){
+          let maxValue = Math.max(...newArr[j])
+         finalnewArr.push(maxValue)
+      }
+     
+  }
+  console.log(finalnewArr)
+ 
+ 
+ 
+};
+minMaxGame([1,3,5,2,4,8,2,2])
