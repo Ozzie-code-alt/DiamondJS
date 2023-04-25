@@ -503,43 +503,72 @@
 // }
 // arrayDiff([2,3,2,2,3], [2])
 
-var minMaxGame = function(nums) {
+// var minMaxGame = function(nums) {
 
-let newLength = nums.length / 2   
+// let newLength = nums.length / 2   
 
-let newArr =[]
-for(i=0;i<nums.length;i++){
-if(i % 2 ==0 && i < newLength){
-    newArr.push(nums[2 * i], nums[2 * i + 1]) // ask gpt why is it that it returns something else when i * 2 instead
-}
+// let newArr =[]
+// for(i=0;i<nums.length;i++){
+// if(i % 2 ==0 && i < newLength){
+//     newArr.push(nums[2 * i], nums[2 * i + 1]) // ask gpt why is it that it returns something else when i * 2 instead
+// }
   
-}
-console.log(newArr)  
-};
-minMaxGame([1,3,5,2,4,8,2,2])
+// }
+// console.log(newArr)  
+// };
+// minMaxGame([1,3,5,2,4,8,2,2])
 
-// new variation for Leetcode 
-var minMaxGame = function(nums) {
-  let newArr = [] 
-  let finalnewArr = []
-  for(i=0;i < nums.length; i+=2){
-      newArr.push(nums.slice(i, i + 2));         
-  }
-  for(j=0;j<newArr.length;j++){
-     if(j % 2 == 0 ){
-        let  minValue = Math.min(...newArr[j])
-         finalnewArr.push(minValue)
+// // new variation for Leetcode 
+// var minMaxGame = function(nums) {
+//   let newArr = [] 
+//   let finalnewArr = []
+//   for(i=0;i < nums.length; i+=2){
+//       newArr.push(nums.slice(i, i + 2));         
+//   }
+//   for(j=0;j<newArr.length;j++){
+//      if(j % 2 == 0 ){
+//         let  minValue = Math.min(...newArr[j])
+//          finalnewArr.push(minValue)
         
-     }
-      else if(j % 2 !==0){
-          let maxValue = Math.max(...newArr[j])
-         finalnewArr.push(maxValue)
-      }
+//      }
+//       else if(j % 2 !==0){
+//           let maxValue = Math.max(...newArr[j])
+//          finalnewArr.push(maxValue)
+//       }
      
-  }
-  console.log(finalnewArr)
+//   }
+//   console.log(finalnewArr)
  
  
  
-};
-minMaxGame([1,3,5,2,4,8,2,2])
+// };
+// minMaxGame([1,3,5,2,4,8,2,2])
+
+
+
+
+// ISPrime ? 
+
+function isPrime(num) {
+  //TODO
+if(num < 2){
+  return console.log(false)
+}
+else if(num === 3){
+
+  return console.log(true)
+}
+let Stringsum = num.toString().split("").map(Number).reduce((a,b) => a+b) / 3
+console.log(Stringsum)
+
+
+if(Stringsum - Math.floor(Stringsum) !==0){
+return console.log(false) 
+}
+else{
+  return console.log(true)
+}
+}
+
+
+isPrime(1981618848)
