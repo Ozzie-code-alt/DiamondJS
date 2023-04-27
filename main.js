@@ -572,3 +572,15 @@ else{
 
 
 isPrime(1981618848)
+
+// replace Voiwels
+
+function shortcut(string) {
+  let Vowels = ["a", "e", "i", "o", "u"];
+
+  for (let vowel of Vowels) {
+    string = string.split(vowel).join("");
+  }
+
+  return string;
+}
