@@ -549,38 +549,80 @@
 
 // ISPrime ? 
 
-function isPrime(num) {
-  //TODO
-if(num < 2){
-  return console.log(false)
-}
-else if(num === 3){
+// function isPrime(num) {
+//   //TODO
+// if(num < 2){
+//   return console.log(false)
+// }
+// else if(num === 3){
 
-  return console.log(true)
-}
-let Stringsum = num.toString().split("").map(Number).reduce((a,b) => a+b) / 3
-console.log(Stringsum)
-
-
-if(Stringsum - Math.floor(Stringsum) !==0){
-return console.log(false) 
-}
-else{
-  return console.log(true)
-}
-}
+//   return console.log(true)
+// }
+// let Stringsum = num.toString().split("").map(Number).reduce((a,b) => a+b) / 3
+// console.log(Stringsum)
 
 
-isPrime(1981618848)
+// if(Stringsum - Math.floor(Stringsum) !==0){
+// return console.log(false) 
+// }
+// else{
+//   return console.log(true)
+// }
+// }
 
-// replace Voiwels
 
-function shortcut(string) {
-  let Vowels = ["a", "e", "i", "o", "u"];
+// isPrime(1981618848)
 
-  for (let vowel of Vowels) {
-    string = string.split(vowel).join("");
+// // replace Voiwels
+
+// function shortcut(string) {
+//   let Vowels = ["a", "e", "i", "o", "u"];
+
+//   for (let vowel of Vowels) {
+//     string = string.split(vowel).join("");
+//   }
+
+//   return string;
+// }
+
+
+// function persistence(num) {
+//   let blankValue = num
+//   counter = 0
+
+//  while(blankValue.toString().length != 1){
+//   blankValue = blankValue.toString().split("").map(Number).reduce((a,b) => a * b)
+//  counter++
+//  }
+// console.log(counter)
+// }
+// persistence(39)
+
+// function diamond(n){
+//   let rows =n
+
+//   for(i=0;i<n;i++){
+//   if(i % 2 !==0){
+//    console.log("* \n")   
+//   }
+//   }
+  
+      
+//   }
+//   diamond(9)z
+
+
+// Square lmao 
+function SquareFunction(num){
+  let height = num
+  let median = Math.ceil(height / 2)
+  for(i=1;i<=median;i++){
+      let line = ""
+  for(j=1; j<=i;j++){
+    line = "*".repeat(num)
+  }
+  console.log(line)
   }
 
-  return string;
 }
+  SquareFunction(10)
