@@ -613,16 +613,87 @@
 
 
 // Square lmao 
-function SquareFunction(num){
-  let height = num
-  let median = Math.ceil(height / 2)
-  for(i=1;i<=median;i++){
-      let line = ""
-  for(j=1; j<=i;j++){
-    line = "*".repeat(num)
-  }
-  console.log(line)
-  }
+// function SquareFunction(num){
+//   let height = num
+//   let median = Math.ceil(height / 2)
+//   for(i=1;i<=median;i++){
+//       let line = ""
+//   for(j=1; j<=i;j++){
+//     line = "*".repeat(num)
+//   }
+//   console.log(line)
+//   }
 
+// }
+//   SquareFunction(10)
+
+
+// function countBy(x, n) {
+
+//   let z = [];
+//   let trueLength = x * n
+//   for(i=1;i<=trueLength;i++){
+//     if(i%x==0){
+//    z.push(i)
+//     }
+
+
+//   }
+//   console.log(z)
+//   }
+  
+//   countBy(2,5)
+
+// function tribonacci(signature,n){
+//   //your code here
+//     let startIndex = 0
+//     let sum = 0
+
+    
+//   for(i=0;i<=n;i++){
+//      let flow =  n[startIndex] + n[startIndex + 1] + n[startIndex + 1 + 1]
+//      sum = flow
+//       signature.push(sum)
+//   }
+//        console.log(...signature)
+// }
+// tribonacci( [1,1,1], 10)
+
+
+// function nbYear(p0, percent, aug, p) {
+//   // your code
+// console.log(p0 , percent)
+
+// let counter = 1
+// while( p0 < p){
+//   counter+=1
+// let formula = p0 + (p0 * percent / 100) + aug 
+// console.log(p0, percent, aug)
+// p0 = formula
+// }
+// console.log(counter)
+// }
+
+// nbYear(1000, 2, 50 ,1214)
+
+
+
+
+function incrementString (strng) {
+  // return incrementedString
+  // first filter using regex, - filter String From Num then just increment num
+let stringNum =  strng.match(/\d+/g)
+let lastelement = stringNum.length - 1 
+let incrementedNum = parseInt(stringNum[lastelement]) + 1
+let convertedNum = incrementedNum.toString()
+let Value = stringNum[lastelement]
+    while(convertedNum.length < Value.length){
+      convertedNum = "0" + convertedNum
+
+    }
+   
+let newString = strng.replace(Value,convertedNum )
+console.log(newString)
 }
-  SquareFunction(10)
+
+incrementString("fo99obar99")
