@@ -679,21 +679,42 @@
 
 
 
-function incrementString (strng) {
-  // return incrementedString
-  // first filter using regex, - filter String From Num then just increment num
-let stringNum =  strng.match(/\d+/g)
-let lastelement = stringNum.length - 1 
-let incrementedNum = parseInt(stringNum[lastelement]) + 1
-let convertedNum = incrementedNum.toString()
-let Value = stringNum[lastelement]
-    while(convertedNum.length < Value.length){
-      convertedNum = "0" + convertedNum
+// function incrementString (strng) {
+//   // return incrementedString
+//   // first filter using regex, - filter String From Num then just increment num
+// let stringNum =  strng.match(/\d+/g)
+// let lastelement = stringNum.length - 1 
+// let incrementedNum = parseInt(stringNum[lastelement]) + 1
+// let convertedNum = incrementedNum.toString()
+// let Value = stringNum[lastelement]
+//     while(convertedNum.length < Value.length){
+//       convertedNum = "0" + convertedNum
 
-    }
+//     }
    
-let newString = strng.replace(Value,convertedNum )
-console.log(newString)
-}
+// let newString = strng.replace(Value,convertedNum )
+// console.log(newString)
+// }
 
-incrementString("fo99obar99")
+// incrementString("fo99obar99")
+
+
+const sequenceSum = (begin, end, step) => {
+  // May the Force be with you
+let total = 0
+let solver =[]
+for(i=begin;i<=end;i+= step){
+  if(total + i > end ){
+  break
+}
+else{
+let numpush = total + i
+solver.push(numpush)
+}
+}
+let final = solver.reduce((a,b) => a+b)
+console.log(final)
+};
+
+sequenceSum(72, 431, 99)
+
