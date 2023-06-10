@@ -699,22 +699,51 @@
 // incrementString("fo99obar99")
 
 
-const sequenceSum = (begin, end, step) => {
-  // May the Force be with you
-let total = 0
-let solver =[]
-for(i=begin;i<=end;i+= step){
-  if(total + i > end ){
-  break
-}
-else{
-let numpush = total + i
-solver.push(numpush)
-}
-}
-let final = solver.reduce((a,b) => a+b)
-console.log(final)
-};
+// const sequenceSum = (begin, end, step) => {
+//   // May the Force be with you
+// let total = 0
+// let solver =[]
+// for(i=begin;i<=end;i+= step){
+//   if(total + i > end ){
+//   break
+// }
+// else{
+// let numpush = total + i
+// solver.push(numpush)
+// }
+// }
+// let final = solver.reduce((a,b) => a+b)
+// console.log(final)
+// };
 
-sequenceSum(72, 431, 99)
+// sequenceSum(72, 431, 99)
 
+function order(words){
+  // ...
+// let blankArr = []
+let wordMapped = words.split(" ")
+let blankArr = []
+for(let index=0;index<wordMapped.length;index++){
+  for(let j=0;j<wordMapped[index].length;j++){
+// blankArr.push(wordMapped[index][j])
+    if(!isNaN(parseInt(wordMapped[index][j]))){
+      let numberString = wordMapped[index][j]
+      blankArr[numberString -1] = wordMapped[index]
+      
+    }}
+
+}
+let sorted = blankArr.join(" ")
+console.log(sorted)
+// let sorted = blankArr.sort(function(a,b) {
+// parseInt(a,10) - parseInt(b,10)
+
+// })
+
+// console.log(sorted)
+
+}
+
+// console.log(sorted)
+
+order("4of Fo1r pe6ople g3ood th5e the2" )
