@@ -748,22 +748,40 @@
 
 // order("4of Fo1r pe6ople g3ood th5e the2" )
 
-function findMultiples(integer, limit) {
-  //your code here
+// function findMultiples(integer, limit) {
+//   //your code here
 
-let blankArr = []
-let newvalue = 0
+// let blankArr = []
+// let newvalue = 0
 
-while(newvalue < limit){
-newvalue = newvalue + integer
-if(newvalue > limit){
-  break
-}
-else{
-  blankArr.push(newvalue)
-}
+// while(newvalue < limit){
+// newvalue = newvalue + integer
+// if(newvalue > limit){
+//   break
+// }
+// else{
+//   blankArr.push(newvalue)
+// }
+
+// }
+// console.log(blankArr)
+// }
+// findMultiples(5,7)
+
+function fizzBuzz(n) {
+  // Write your code here
+  
+  for(let i=1;i<=n;i++){
+      if(i%3==0 && i%5==0){
+       console.log("Hello")
+  }
+  else{
+  console.log(i)
+  }
+
+  
 
 }
-console.log(blankArr)
 }
-findMultiples(5,7)
+fizzBuzz(15)
+
