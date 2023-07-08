@@ -855,3 +855,20 @@
 
 // }
 // miniMaxSum([1,2,3,4,5])
+
+
+//Remove one add one
+
+let removeOneAddOne = (arr) =>{
+
+  for(i=0;i<arr.length;i++){
+    let removeAdd = [...arr.slice(0,i) , ...arr.slice(i+1)]
+    console.log(removeAdd)
+
+
+  }
+
+
+}
+
+removeOneAddOne([1,2,3,4,5])
