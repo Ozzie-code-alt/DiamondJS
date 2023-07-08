@@ -768,20 +768,61 @@
 // }
 // findMultiples(5,7)
 
-function fizzBuzz(n) {
+// function fizzBuzz(n) {
+//   // Write your code here
+  
+//   for(let i=1;i<=n;i++){
+//       if(i%3==0 && i%5==0){
+//        console.log("Hello")
+//   }
+//   else{
+//   console.log(i)
+//   }
+
+  
+
+// }
+// }
+// fizzBuzz(15)
+
+// function compareTriplets(a, b) {
+//   let counterA = 0
+//   let counterb = 0
+// for( let i=0;i<a.length && i<b.length;i++){
+//   if(a[i] > b[i]){
+//       counterA++
+//   }
+//   else if (a[i]< b[i]){
+//       counterb++
+//   }
+  
+// }
+// console.log(counterA, counterb)
+// }
+
+// compareTriplets([17,28,30], [99,16,8])
+
+function plusMinus(arr) {
   // Write your code here
+  let zeroCounter = 0
+  let negativeCounter =0
+  let positiveCounter =0
   
-  for(let i=1;i<=n;i++){
-      if(i%3==0 && i%5==0){
-       console.log("Hello")
-  }
-  else{
-  console.log(i)
-  }
-
+   arr.map((value) =>{
+      if(value < 0){
+          negativeCounter ++
+      }
+      else if(value == 0){
+          zeroCounter++
+      }
+      else if(value > 0){
+          positiveCounter++
+      }
+      
+  } )
   
-
+  
+  let zeroRatio = (zeroCounter / arr.length).toFixed(6), negativeRatio = (negativeCounter/ arr.length).toFixed(6), positiveRatio = (positiveCounter / arr.length).toFixed(6)
+  
+console.log(positiveRatio + "\n" + negativeRatio + "\n"+ zeroRatio)
 }
-}
-fizzBuzz(15)
-
