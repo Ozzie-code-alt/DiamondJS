@@ -802,27 +802,56 @@
 
 // compareTriplets([17,28,30], [99,16,8])
 
-function plusMinus(arr) {
-  // Write your code here
-  let zeroCounter = 0
-  let negativeCounter =0
-  let positiveCounter =0
+// function plusMinus(arr) {
+//   // Write your code here
+//   let zeroCounter = 0
+//   let negativeCounter =0
+//   let positiveCounter =0
   
-   arr.map((value) =>{
-      if(value < 0){
-          negativeCounter ++
-      }
-      else if(value == 0){
-          zeroCounter++
-      }
-      else if(value > 0){
-          positiveCounter++
-      }
+//    arr.map((value) =>{
+//       if(value < 0){
+//           negativeCounter ++
+//       }
+//       else if(value == 0){
+//           zeroCounter++
+//       }
+//       else if(value > 0){
+//           positiveCounter++
+//       }
       
-  } )
+//   } )
   
   
-  let zeroRatio = (zeroCounter / arr.length).toFixed(6), negativeRatio = (negativeCounter/ arr.length).toFixed(6), positiveRatio = (positiveCounter / arr.length).toFixed(6)
+//   let zeroRatio = (zeroCounter / arr.length).toFixed(6), negativeRatio = (negativeCounter/ arr.length).toFixed(6), positiveRatio = (positiveCounter / arr.length).toFixed(6)
   
-console.log(positiveRatio + "\n" + negativeRatio + "\n"+ zeroRatio)
-}
+// console.log(positiveRatio + "\n" + negativeRatio + "\n"+ zeroRatio)
+// }
+
+
+// function miniMaxSum(arr) {   WRONG SOLUTION HEHE
+//   // Write your code here\
+//   let total = []
+//   let currIndex = 0
+//   let arrLength = arr.length
+//   for(let i=0;i<arr.length;i++){   
+//     arr.splice(currIndex,1)  
+//     if(arr.length !== arrLength-1){
+      
+
+//     }
+//     else{
+//       continue
+//     }
+//       console.log(...arr)
+//      let arrTotal =  arr.reduce((acuumulator, curValue) =>{
+//           return acuumulator + curValue
+//       })
+      
+//       total.push(arrTotal)
+      
+//   }
+  
+//   console.log(total)
+
+// }
+// miniMaxSum([1,2,3,4,5])
