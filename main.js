@@ -859,16 +859,38 @@
 
 //Remove one add one
 
-let removeOneAddOne = (arr) =>{
+// let removeOneAddOne = (arr) =>{
 
-  for(i=0;i<arr.length;i++){
-    let removeAdd = [...arr.slice(0,i) , ...arr.slice(i+1)]
-    console.log(removeAdd)
+//   for(i=0;i<arr.length;i++){
+//     let removeAdd = [...arr.slice(0,i) , ...arr.slice(i+1)]
+//     console.log(removeAdd)
 
 
+//   }
+
+
+// }
+
+// removeOneAddOne([1,2,3,4,5])
+
+function timeConversion(s) {
+  let splitString = s.split(":")
+  if(splitString[2].includes("") && splitString[0] == "12"){
+      console.log(s.replaceAll("PM",""))
   }
-
-
+  if(splitString[2].includes("PM") || splitString[0]== "12" && splitString[2].includes("AM")){
+      let newNum = Number(splitString[0]) + 12 
+      if(newNum == 24){
+          newNum = "00"
+      }
+      splitString.splice(0,1)
+     splitString.unshift(String(newNum))
+      let finalanswer = splitString.join(" ").replaceAll(" ", ":")
+      console.log(finalanswer.replaceAll("PM","").replaceAll("AM",""))
+  }
+  else if(splitString[2].includes("AM")){
+      console.log(s.replaceAll("AM",""))
+  }
+  
 }
-
-removeOneAddOne([1,2,3,4,5])
+timeConversion("12:45:54PM")
