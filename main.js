@@ -873,24 +873,68 @@
 
 // removeOneAddOne([1,2,3,4,5])
 
-function timeConversion(s) {
-  let splitString = s.split(":")
-  if(splitString[2].includes("") && splitString[0] == "12"){
-      console.log(s.replaceAll("PM",""))
-  }
-  if(splitString[2].includes("PM") || splitString[0]== "12" && splitString[2].includes("AM")){
-      let newNum = Number(splitString[0]) + 12 
-      if(newNum == 24){
-          newNum = "00"
-      }
-      splitString.splice(0,1)
-     splitString.unshift(String(newNum))
-      let finalanswer = splitString.join(" ").replaceAll(" ", ":")
-      console.log(finalanswer.replaceAll("PM","").replaceAll("AM",""))
-  }
-  else if(splitString[2].includes("AM")){
-      console.log(s.replaceAll("AM",""))
-  }
+// function timeConversion(s) {
+//   let splitString = s.split(":")
+//   if(splitString[2].includes("") && splitString[0] == "12"){
+//       console.log(s.replaceAll("PM",""))
+//   }
+//   if(splitString[2].includes("PM") || splitString[0]== "12" && splitString[2].includes("AM")){
+//       let newNum = Number(splitString[0]) + 12 
+//       if(newNum == 24){
+//           newNum = "00"
+//       }
+//       splitString.splice(0,1)
+//      splitString.unshift(String(newNum))
+//       let finalanswer = splitString.join(" ").replaceAll(" ", ":")
+//       console.log(finalanswer.replaceAll("PM","").replaceAll("AM",""))
+//   }
+//   else if(splitString[2].includes("AM")){
+//       console.log(s.replaceAll("AM",""))
+//   }
   
+// }
+// timeConversion("12:45:54PM")
+
+
+
+// Lonely Integer
+
+// function lonelyinteger(a) {
+//   // Write your code here
+  
+//   let blankArr = []
+//   for(i=0;i<a.length;i++){
+//     for(j = i + 1; j<a.length;j++){
+//       if(a[i] === a[j] && !blankArr.includes(a[i])){
+//         blankArr.push(a[i])
+//       }
+//     }
+//   }
+
+// let filteredArray = a.filter((value)=>!blankArr.includes(value))
+
+// console.log(filteredArray)
+// }
+
+// lonelyinteger([0,0,1,2,1])
+
+
+//Ascending 2 ways we can do this
+let sortFunction = (arr)=>{
+
+for(let i=0;i<arr.length;i++){
+  for(let j= i+1;j<arr.length;j++){
+      if(arr[j]< arr[i]){
+        let temp = arr[j]
+         arr[j] = arr[i]
+         arr[i] = temp
+      }
+     
+  }
 }
-timeConversion("12:45:54PM")
+
+console.log(arr)
+}
+
+
+sortFunction([1,3,4,2,5,6])
