@@ -920,19 +920,25 @@
 
 
 //Ascending 2 ways we can do this
-let sortFunction = (arr)=>{
+// let sort = (arr, indexi , minIndex) =>{
+// let temp = arr[indexi]
+// arr[indexi] = arr[minIndex]
+// arr[minIndex] = temp
+// }
 
+let sortFunction = (arr)=>{
 for(let i=0;i<arr.length;i++){
+  // let minIndex = i
   for(let j= i+1;j<arr.length;j++){
       if(arr[j]< arr[i]){
+        // minIndex = j
         let temp = arr[j]
-         arr[j] = arr[i]
-         arr[i] = temp
+        arr[j] = arr[i]
+        arr[i] = temp
       }
-     
-  }
+    }
+    // sort(arr, i ,minIndex)
 }
-
 console.log(arr)
 }
 
