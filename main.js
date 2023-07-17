@@ -1042,11 +1042,34 @@
 
 // console.log(Student3)
 
-let reverseString = (name)=>{
-let reversed = name.split("").reverse().join("").replace(/,/ , " ")
-console.log(reversed)
+// let reverseString = (name)=>{
+// let reversed = name.split("").reverse().join("").replace(/,/ , " ")
+// console.log(reversed)
+// }
+
+
+// reverseString("pokemon")
+
+// created a function that flats a nested array to a single array 
+
+
+// let flattedArr = (arr)=>{
+// console.log(arr.flat())
+// }
+
+// flattedArr([1,2,4,5,[6,7,8]])
+
+
+
+
+let debounceFuntionc = (num)=>{
+num = Math.random() * (0 - 100) + 100
+console.log(num)
 }
 
+debounceFuntionc(Math.random() * (0 - 100) + 100)
 
-reverseString("pokemon")
 
+let startInterval = setInterval(debounceFuntionc,1000)
+
+setTimeout(() =>{clearInterval(startInterval)},5000)
