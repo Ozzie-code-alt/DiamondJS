@@ -1062,14 +1062,33 @@
 
 
 
-let debounceFuntionc = (num)=>{
-num = Math.random() * (0 - 100) + 100
-console.log(num)
-}
+// let debounceFuntionc = (num)=>{
+// num = Math.random() * (0 - 100) + 100
+// console.log(num)
+// }
 
-debounceFuntionc(Math.random() * (0 - 100) + 100)
+// debounceFuntionc(Math.random() * (0 - 100) + 100)
 
 
-let startInterval = setInterval(debounceFuntionc,1000)
+// let startInterval = setInterval(debounceFuntionc,1000)
 
-setTimeout(() =>{clearInterval(startInterval)},5000)
+// setTimeout(() =>{clearInterval(startInterval)},5000)
+
+
+// even numbers of an array 
+
+// let evenNumns = (arr)=>{
+//   let blankArr= []
+// for(i=0;i<arr.length;i++){
+// if(arr[i] %2 ==0){
+//   blankArr.push(arr[i])
+// }
+
+// }
+
+// let totalNum = blankArr.reduce((a,b) => a+b)
+// console.log(totalNum)
+// }
+
+
+// evenNumns([1,4,6,10,13,21,3])
