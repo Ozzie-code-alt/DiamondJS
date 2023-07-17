@@ -983,28 +983,45 @@
 
 
 // Destructuring Objects
-let Student= {
-  name: "Justin",
-  age: 14,
-  school: "CPU",
-  Grades: {
-      FirstSemester: 1.0,
-      SecondSemester: 1.4
-  }
+// let Student= {
+//   name: "Justin",
+//   age: 14,
+//   school: "CPU",
+//   Grades: {
+//       FirstSemester: 1.0,
+//       SecondSemester: 1.4
+//   }
 
-}
+// }
 
-let Student2= {
-  school: "West",
-  Grades: {
-      FirstSemester: 2.0,
-      SecondSemester: 4.4
-  }
+// let Student2= {
+//   school: "West",
+//   Grades: {
+//       FirstSemester: 2.0,
+//       SecondSemester: 4.4
+//   }
 
-}
+// }
 
-const Student3 = ({...Student,...Student2})
+// const Student3 = ({...Student,...Student2})
 
 
 
-console.log(Student3)
+// console.log(Student3)
+
+
+// Array Destructuring 
+
+// let arr1 = [1,2,3,4,5,6]
+// let  arr2 = [2,3,4,1,6,7]
+// const thirdArr = [...arr1,...arr2] // destructuring 
+// console.log(thirdArr)
+
+
+// access array 1 and 2 then make array 3 4 5 6 a sub array
+
+
+//destructuring nested Objects: 
+
+
+
