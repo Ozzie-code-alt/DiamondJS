@@ -1024,4 +1024,29 @@
 //destructuring nested Objects: 
 
 
+// make an array and destructure it 
+
+
+// const Student1 = {
+// name: "Justin",
+// age: 20,
+// favoriteFood: "Watermelon"
+// }
+
+// const Student2 = {
+// name: "Kathleen",
+// age: 40,
+// }
+
+// const Student3 = {...Student1,...Student2}
+
+// console.log(Student3)
+
+let reverseString = (name)=>{
+let reversed = name.split("").reverse().join("").replace(/,/ , " ")
+console.log(reversed)
+}
+
+
+reverseString("pokemon")
 
