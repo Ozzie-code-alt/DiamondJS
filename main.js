@@ -946,22 +946,65 @@
 // sortFunction([1,3,4,2,5,6])
 
 
-let DiagonalFunction=(arr)=>{
-console.log(arr)
-let LeftTotal = 0
-let RightTotal = 0
-for(i=0; i<arr.length;i++){
-LeftTotal += arr[i][i]
+// let DiagonalFunction=(arr)=>{
+// console.log(arr)
+// let LeftTotal = 0
+// let RightTotal = 0
+// for(i=0; i<arr.length;i++){
+// LeftTotal += arr[i][i]
+// }
+// let lastIndex = arr.length -1
+
+// for(i=0;i<arr.length;i++){
+//   console.log(arr[i][lastIndex])
+//   lastIndex--
+
+// }
+
+// }
+
+// DiagonalFunction([[11,2,4] ,[4,5,6], [10,8,-12]])
+
+// let printTriangle = (num) => {
+//   let width = num;
+//   let center = Math.floor(width / 2);
+
+//   for (let i = 0; i < width; i++) {
+//     let row = "";
+//     for (let j = 0; j <= i; j++) {
+//       if (j <= center && center - j <= i) {
+//         row += "*";
+//       } 
+//     }
+//     console.log(row);
+//   }
+// // }
+// printTriangle(10);
+
+
+// Destructuring Objects
+let Student= {
+  name: "Justin",
+  age: 14,
+  school: "CPU",
+  Grades: {
+      FirstSemester: 1.0,
+      SecondSemester: 1.4
+  }
+
 }
-let lastIndex = arr.length -1
 
-for(i=0;i<arr.length;i++){
-  console.log(arr[i][lastIndex])
-  lastIndex--
-  
+let Student2= {
+  school: "West",
+  Grades: {
+      FirstSemester: 2.0,
+      SecondSemester: 4.4
+  }
+
 }
 
-}
+const Student3 = ({...Student,...Student2})
 
-DiagonalFunction([[11,2,4] ,[4,5,6], [10,8,-12]])
 
+
+console.log(Student3)
