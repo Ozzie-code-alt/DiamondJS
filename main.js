@@ -1092,3 +1092,61 @@
 
 
 // evenNumns([1,4,6,10,13,21,3])
+
+
+// two dates and total in days
+
+//dateformat = mm/dd/yyyy
+
+// let twoDates =(date1,date2)=>{
+// // convert to num 
+
+// // console.log(Array.from(date1).join(",").replace(/,/g, " "))
+// // console.log(Array.from(date2).join(",").replace(/,/g, " "))
+// let newdate = new Date(date1)
+// let newdate2 = new Date(date2)
+
+// let dateDifference = (newdate - newdate2)
+
+// console.log(dateDifference)
+
+// }
+
+
+// twoDates("08/29/2001", "09/01/1999")
+
+
+
+// array destrructuring
+// const Arrr1 =[1,2,3,4,5]
+// const arr2 = [6,7,8,9,10]
+
+// const combinedArr = [...Arrr1, ...arr2]
+// console.log(combinedArr)
+
+// const[num1,num2] = Arrr1
+
+
+// console.log(num1, num2)
+
+
+const Student1 = {
+name:"Justin",
+age: 20,
+favFood:"Hotdogs"
+}
+
+
+const Student2 = {
+  name:"Kathleen",
+  age:18,
+  // favFood:"soup"
+}
+
+const {name ="Peter"} = Student1
+console.log(name)
+
+
+const newStudent = {...Student1, ...Student2}
+
+console.log(newStudent)
