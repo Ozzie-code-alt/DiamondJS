@@ -1178,21 +1178,51 @@
 
 
 // filter the domain Name without the TLD
-function domainName(url){
-  //your code here
+// function domainName(url){
+//   //your code here
   
-  let filtered_Vars = /https?|\.com|\/\/www.?|:|\.ru|\/\/|\.co|\.jp|\.\w{2,5}|www.?|/g
+//   let filtered_Vars = /https?|\.com|\/\/www.?|:|\.ru|\/\/|\.co|\.jp|\.\w{2,5}|www.?|/g
 
-  let url_Filtered = url.replace(filtered_Vars, "")
+//   let url_Filtered = url.replace(filtered_Vars, "")
 
 
-  if(url_Filtered.split("/")){
-    let splitted = url_Filtered.split("/")
-    let TLD_remover = splitted[0]
-    return TLD_remover
-  }
-  else{
-    return url_Filtered
-  }
+//   if(url_Filtered.split("/")){
+//     let splitted = url_Filtered.split("/")
+//     let TLD_remover = splitted[0]
+//     return TLD_remover
+//   }
+//   else{
+//     return url_Filtered
+//   }
   
-}
+// }
+
+// sorting buuble sort and built in sort func 
+function solution(nums) {
+  //   if (nums == null) {
+  //     return [];
+  //   } else if (nums.length === 0) {
+  //     return [];
+  //   }
+  
+  //   for (let i = 0; i < nums.length; i++) {
+  //     let currNumber = nums[i];
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       if (nums[j] < nums[i]) {
+  //         nums[i] = nums[j];
+  //         nums[j] = currNumber;
+  //       }
+  //     }
+  //   }
+  //   return nums;
+    
+      if (nums == null) {
+      return [];
+    } else if (nums.length === 0) {
+      return [];
+    }
+    else {
+      nums.sort((a,b) =>a -b)  // apparently this shit works 
+    }
+  return nums
+  }
