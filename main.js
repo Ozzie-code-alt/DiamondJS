@@ -1222,7 +1222,7 @@ function solution(nums) {
       return [];
     }
     else {
-      nums.sort((a,b) =>a -b)  // apparently this shit works Blargg
+      nums.sort((a,b) =>a -b)  // apparently this shit works Blargg...
     }
   return nums
   }
