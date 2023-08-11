@@ -1130,23 +1130,58 @@
 // console.log(num1, num2)
 
 
-const Student1 = {
-name:"Justin",
-age: 20,
-favFood:"Hotdogs"
+// const Student1 = {
+// name:"Justin",
+// age: 20,
+// favFood:"Hotdogs"
+// }
+
+
+// const Student2 = {
+//   name:"Kathleen",
+//   age:18,
+//   // favFood:"soup"
+// }
+
+// const {name ="Peter"} = Student1
+// console.log(name)
+
+
+// const newStudent = {...Student1, ...Student2}
+
+// console.log(newStudent)
+
+// const sortArr = (arr)=>{
+
+//   for(i=0;i<arr.length;i++){
+//       for(j=i+1;j<arr.length;j++){
+//           if(arr[j] > arr[i]){
+//           let tempArr = arr[j]
+//           arr[j] = arr[i]
+//           arr[i] = tempArr
+//           }
+//       }
+      
+//   }
+//   console.log(arr)
+// }
+
+// sortArr([5,3,1,2,4])
+
+// count iterating characters and increment value in object
+function count(string) {
+  // TODO
+// console.log(string)
+let newArr = [...string]
+let convertedToObject = newArr.reduce((key,value)=>{
+if(!key.hasOwnProperty(value)){
+key[value] = 1
 }
-
-
-const Student2 = {
-  name:"Kathleen",
-  age:18,
-  // favFood:"soup"
+else{
+key[value]+=1
 }
+return key
+},{})
 
-const {name ="Peter"} = Student1
-console.log(name)
-
-
-const newStudent = {...Student1, ...Student2}
-
-console.log(newStudent)
+return convertedToObject
+}
