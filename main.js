@@ -1187,16 +1187,17 @@
 // }
 
 
-function noBoringZeros(n) {
+function noBoringZeros(n) { // update this later by checking it from the end if it contains zero instead 
   // your code
     let splited = n.toString().split("")
-    
-  for(i=0;i<=splited.length;i++){
-if(splited[i] =='0' && splited[i+1] == '0'){
-
-}
-
+    let newArr =[]
 console.log(splited)
+  for(i=splited.length;i>0;i--){
+  if(splited[i] =='0'){
+   console.log(splited[i])
+  }
+
 }
+
 }
 noBoringZeros(10500000)
