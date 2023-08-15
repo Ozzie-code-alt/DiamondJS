@@ -1168,20 +1168,35 @@
 
 // sortArr([5,3,1,2,4])
 
-// count iterating characters and increment value in object
-function count(string) {
-  // TODO
-// console.log(string)
-let newArr = [...string]
-let convertedToObject = newArr.reduce((key,value)=>{
-if(!key.hasOwnProperty(value)){
-key[value] = 1
-}
-else{
-key[value]+=1
-}
-return key
-},{})
+// // count iterating characters and increment value in object
+// function count(string) {
+//   // TODO
+// // console.log(string)
+// let newArr = [...string]
+// let convertedToObject = newArr.reduce((key,value)=>{
+// if(!key.hasOwnProperty(value)){
+// key[value] = 1
+// }
+// else{
+// key[value]+=1
+// }
+// return key
+// },{})
 
-return convertedToObject
+// return convertedToObject
+// }
+
+
+function noBoringZeros(n) {
+  // your code
+    let splited = n.toString().split("")
+    
+  for(i=0;i<=splited.length;i++){
+if(splited[i] =='0' && splited[i+1] == '0'){
+
 }
+
+console.log(splited)
+}
+}
+noBoringZeros(10500000)
