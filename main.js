@@ -1144,13 +1144,33 @@
 
 //  reverse a string 
 
-const reversedString = (str)=>{
+// const reversedString = (str)=>{
 
-let mapped = str.split(" ").map((value) => {
-return value.split("").reverse().join("")
-})
+// let mapped = str.split(" ").map((value) => {
+// return value.split("").reverse().join("")
+// })
 
-console.log(mapped.join(" "))
-}
+// console.log(mapped.join(" "))
+// }
 
-reversedString("The quick Brown fox")
+// reversedString("The quick Brown fox")
+
+function duplicateCount(text){
+    //...
+    let duplicates = []
+    let converted = text.toLowerCase()
+  for(i=0;i<converted.length;i++){
+    for(j=i+1;j<converted.length;j++){
+      if(converted[i] === converted[j]){
+        if(!duplicates.includes(converted[i])){
+            duplicates.push(converted[i])
+        }
+      }
+    }
+  }
+
+
+  console.log(duplicates.length)
+  }
+  
+  duplicateCount("aabBcde")
