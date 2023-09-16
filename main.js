@@ -1140,3 +1140,17 @@
 // }
 
 // stray([2,1,1])
+
+
+//  reverse a string 
+
+const reversedString = (str)=>{
+
+let mapped = str.split(" ").map((value) => {
+return value.split("").reverse().join("")
+})
+
+console.log(mapped.join(" "))
+}
+
+reversedString("The quick Brown fox")
