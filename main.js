@@ -1155,22 +1155,37 @@
 
 // reversedString("The quick Brown fox")
 
-function duplicateCount(text){
-    //...
-    let duplicates = []
-    let converted = text.toLowerCase()
-  for(i=0;i<converted.length;i++){
-    for(j=i+1;j<converted.length;j++){
-      if(converted[i] === converted[j]){
-        if(!duplicates.includes(converted[i])){
-            duplicates.push(converted[i])
-        }
-      }
-    }
-  }
+// function duplicateCount(text){
+//     //...
+//     let duplicates = []
+//     let converted = text.toLowerCase()
+//   for(i=0;i<converted.length;i++){
+//     for(j=i+1;j<converted.length;j++){
+//       if(converted[i] === converted[j]){
+//         if(!duplicates.includes(converted[i])){
+//             duplicates.push(converted[i])
+//         }
+//       }
+//     }
+//   }
 
 
-  console.log(duplicates.length)
-  }
+//   console.log(duplicates.length)
+//   }
   
-  duplicateCount("aabBcde")
+//   duplicateCount("aabBcde")
+
+
+function domainName(url){
+  //your code here
+  
+  let filtered_Vars = /https?|\.com|\/\/www|:|\.|/g
+ 
+  let url_Filtered = url.replace(filtered_Vars, "")
+
+
+  if 
+  console.log(url_Filtered)
+}
+
+domainName("http://github.com/carbonfive/raygun")
