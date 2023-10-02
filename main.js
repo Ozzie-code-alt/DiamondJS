@@ -1179,14 +1179,16 @@
 function domainName(url){
   //your code here
   
-  let filtered_Vars = /https?|\.com|\/\/www|:|www.?|\.ru|\/\/|\.co|\.jp|/g
-  let anotherFilter = /\.\w{2,3}/g
+  let filtered_Vars = /https?|\.com|\/\/www|:|www.?|\.ru|\/\/|\.co|\.jp|\.|/g
+  let anotherFilter = /\.\w{1}/g
   let url_Filtered = url.replace(filtered_Vars, "")
 
 
   if(url_Filtered.split("/")){
     let splitted = url_Filtered.split("/")
-    console.log(splitted[0].replace(anotherFilter,""))
+    console.log(splitted)
+    let TLD_remover = splitted[0].replace(anotherFilter,"")
+    console.log(TLD_remover)
   }
   else{
     console.log(url_Filtered)
@@ -1194,4 +1196,4 @@ function domainName(url){
   
 }
 
-domainName("p09k82gyv45hda-mkv9ze.tv/default.html")
+domainName("http://cmyb8r8awp4i18bunoci.net")
