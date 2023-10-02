@@ -1179,13 +1179,19 @@
 function domainName(url){
   //your code here
   
-  let filtered_Vars = /https?|\.com|\/\/www|:|\.|/g
- 
+  let filtered_Vars = /https?|\.com|\/\/www|:|www.?|\.ru|\/\/|\.co|\.jp|/g
+  let anotherFilter = /\.\w{2,3}/g
   let url_Filtered = url.replace(filtered_Vars, "")
 
 
-  if 
-  console.log(url_Filtered)
+  if(url_Filtered.split("/")){
+    let splitted = url_Filtered.split("/")
+    console.log(splitted[0].replace(anotherFilter,""))
+  }
+  else{
+    console.log(url_Filtered)
+  }
+  
 }
 
-domainName("http://github.com/carbonfive/raygun")
+domainName("p09k82gyv45hda-mkv9ze.tv/default.html")
