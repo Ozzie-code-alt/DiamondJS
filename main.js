@@ -1176,24 +1176,23 @@
 //   duplicateCount("aabBcde")
 
 
+
+// filter the domain Name without the TLD
 function domainName(url){
   //your code here
   
-  let filtered_Vars = /https?|\.com|\/\/www|:|www.?|\.ru|\/\/|\.co|\.jp|\.|/g
-  let anotherFilter = /\.\w{1}/g
+  let filtered_Vars = /https?|\.com|\/\/www.?|:|\.ru|\/\/|\.co|\.jp|\.\w{2,5}|www.?|/g
+
   let url_Filtered = url.replace(filtered_Vars, "")
 
 
   if(url_Filtered.split("/")){
     let splitted = url_Filtered.split("/")
-    console.log(splitted)
-    let TLD_remover = splitted[0].replace(anotherFilter,"")
-    console.log(TLD_remover)
+    let TLD_remover = splitted[0]
+    return TLD_remover
   }
   else{
-    console.log(url_Filtered)
+    return url_Filtered
   }
   
 }
-
-domainName("http://cmyb8r8awp4i18bunoci.net")
