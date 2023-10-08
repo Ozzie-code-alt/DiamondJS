@@ -1216,13 +1216,15 @@ function solution(nums) {
   //   }
   //   return nums;
     
-      if (nums == null) {
-      return [];
-    } else if (nums.length === 0) {
-      return [];
-    }
-    else {
-      nums.sort((a,b) =>a -b)  // apparently this shit works Blargg...
-    }
-  return nums
-  }
+  //     if (nums == null) {
+  //     return [];
+  //   } else if (nums.length === 0) {
+  //     return [];
+  //   }
+  //   else {
+  //     nums.sort((a,b) =>a -b)  // apparently this shit works Blargg...
+  //   }
+  // return nums
+  // }
+
+  //work ples
