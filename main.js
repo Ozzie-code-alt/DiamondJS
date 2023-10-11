@@ -1231,30 +1231,49 @@
 
 
   // multiple of 5 
-  function roundToNext5(n) {
-    // Calculate the remainder when dividing by 5
-    const remainder = Math.abs(n) % 5;
+  // function roundToNext5(n) {
+  //   // Calculate the remainder when dividing by 5
+  //   const remainder = Math.abs(n) % 5;
   
-    // If the remainder is 0, n is already a multiple of 5
-    if (remainder === 0) {
-      return n;
-    }
+  //   // If the remainder is 0, n is already a multiple of 5
+  //   if (remainder === 0) {
+  //     return n;
+  //   }
   
-    // Calculate the difference between 5 and the remainder
-    const difference = 5 - remainder;
-    console.log(difference)
-    // Determine the sign of the result based on the sign of n
-    const sign = n >= 0 ? 1 : -1;
+  //   // Calculate the difference between 5 and the remainder
+  //   const difference = 5 - remainder;
+  //   console.log(difference)
+  //   // Determine the sign of the result based on the sign of n
+  //   const sign = n >= 0 ? 1 : -1;
   
-    // Add the difference to n with the appropriate sign
-  const heheSign =   n + difference * sign;
-    if(n == -1){
-      return 0
-    }
-    else if (n < 0){
-      return heheSign +5
-    }
-    else {
-      return heheSign
-    }
-  }
+  //   // Add the difference to n with the appropriate sign
+  // const heheSign =   n + difference * sign;
+  //   if(n == -1){
+  //     return 0
+  //   }
+  //   else if (n < 0){
+  //     return heheSign +5
+  //   }
+  //   else {
+  //     return heheSign
+  //   }
+  // }
+
+
+
+//  print Errors Codewars
+function printerError(s) {
+  // your code
+let regexCon = /([a-m])/g
+let wordSplitted = s.match(regexCon)
+
+let counter= 0
+let mapped = s.split("").map(value =>{
+if(!wordSplitted.includes(value)){
+    counter+= 1
+}
+} )
+return `${counter}/${s.split("").length}`
+}
+
+printerError("aaaxbbbbyyhwawiwjjjwwm")
