@@ -1261,19 +1261,66 @@
 
 
 
-//  print Errors Codewars
-function printerError(s) {
-  // your code
-let regexCon = /([a-m])/g
-let wordSplitted = s.match(regexCon)
+// //  print Errors Codewars
+// function printerError(s) {
+//   // your code
+// let regexCon = /([a-m])/g
+// let wordSplitted = s.match(regexCon)
 
-let counter= 0
-let mapped = s.split("").map(value =>{
-if(!wordSplitted.includes(value)){
-    counter+= 1
+// let counter= 0
+// let mapped = s.split("").map(value =>{
+// if(!wordSplitted.includes(value)){
+//     counter+= 1
+// }
+// } )
+// return `${counter}/${s.split("").length}`
+// }
+
+// printerError("aaaxbbbbyyhwawiwjjjwwm")
+
+
+
+// leetcode Roman Numerals
+var romanToInt = function(s) {
+  // try to answer this tom heheh
+
+  const romanNumContainer = {
+      I:1,
+      V:5,
+      X:10,
+      L:50,
+      C:100,
+      D:500,
+      M:1000,
+      IX:9,
+      IV:4
+  }
+  const UnusualNumReg = /(IV|IX)/g
+
+
+
+if (s.match(UnusualNumReg)){
+console.log("it works")
 }
-} )
-return `${counter}/${s.split("").length}`
+else{
+  let RomanNumSplitted = s.split("")
+console.log(RomanNumSplitted)
+let blankArr = []
+
+RomanNumSplitted.forEach((id) =>{
+  if(id in romanNumContainer){
+    blankArr.push(romanNumContainer[id])
+  }
+})
+
+// we get sum here 
+const total = blankArr.reduce((acc, cur) => acc+cur)
+console.log(total)
+
 }
 
-printerError("aaaxbbbbyyhwawiwjjjwwm")
+
+};
+
+
+romanToInt("LVIII")
