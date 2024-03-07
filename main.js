@@ -1141,8 +1141,7 @@
 
 // stray([2,1,1])
 
-
-//  reverse a string 
+//  reverse a string
 
 // const reversedString = (str)=>{
 
@@ -1169,22 +1168,18 @@
 //     }
 //   }
 
-
 //   console.log(duplicates.length)
 //   }
-  
+
 //   duplicateCount("aabBcde")
-
-
 
 // filter the domain Name without the TLD
 // function domainName(url){
 //   //your code here
-  
+
 //   let filtered_Vars = /https?|\.com|\/\/www.?|:|\.ru|\/\/|\.co|\.jp|\.\w{2,5}|www.?|/g
 
 //   let url_Filtered = url.replace(filtered_Vars, "")
-
 
 //   if(url_Filtered.split("/")){
 //     let splitted = url_Filtered.split("/")
@@ -1194,72 +1189,69 @@
 //   else{
 //     return url_Filtered
 //   }
-  
+
 // }
 
-// sorting buuble sort and built in sort func 
+// sorting buuble sort and built in sort func
 // function solution(nums) {
-  //   if (nums == null) {
-  //     return [];
-  //   } else if (nums.length === 0) {
-  //     return [];
-  //   }
-  
-  //   for (let i = 0; i < nums.length; i++) {
-  //     let currNumber = nums[i];
-  //     for (let j = i + 1; j < nums.length; j++) {
-  //       if (nums[j] < nums[i]) {
-  //         nums[i] = nums[j];
-  //         nums[j] = currNumber;
-  //       }
-  //     }
-  //   }
-  //   return nums;
-    
-  //     if (nums == null) {
-  //     return [];
-  //   } else if (nums.length === 0) {
-  //     return [];
-  //   }
-  //   else {
-  //     nums.sort((a,b) =>a -b)  // apparently this shit works Blargg...
-  //   }
-  // return nums
-  // }
+//   if (nums == null) {
+//     return [];
+//   } else if (nums.length === 0) {
+//     return [];
+//   }
 
-  //work ples now work ples 
+//   for (let i = 0; i < nums.length; i++) {
+//     let currNumber = nums[i];
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[j] < nums[i]) {
+//         nums[i] = nums[j];
+//         nums[j] = currNumber;
+//       }
+//     }
+//   }
+//   return nums;
 
+//     if (nums == null) {
+//     return [];
+//   } else if (nums.length === 0) {
+//     return [];
+//   }
+//   else {
+//     nums.sort((a,b) =>a -b)  // apparently this shit works Blargg...
+//   }
+// return nums
+// }
 
-  // multiple of 5 
-  // function roundToNext5(n) {
-  //   // Calculate the remainder when dividing by 5
-  //   const remainder = Math.abs(n) % 5;
-  
-  //   // If the remainder is 0, n is already a multiple of 5
-  //   if (remainder === 0) {
-  //     return n;
-  //   }
-  
-  //   // Calculate the difference between 5 and the remainder
-  //   const difference = 5 - remainder;
-  //   console.log(difference)
-  //   // Determine the sign of the result based on the sign of n
-  //   const sign = n >= 0 ? 1 : -1;
-  
-  //   // Add the difference to n with the appropriate sign
-  // const heheSign =   n + difference * sign;
-  //   if(n == -1){
-  //     return 0
-  //   }
-  //   else if (n < 0){
-  //     return heheSign +5
-  //   }
-  //   else {
-  //     return heheSign
-  //   }
-  // }
+//work ples now work ples
 
+// multiple of 5
+// function roundToNext5(n) {
+//   // Calculate the remainder when dividing by 5
+//   const remainder = Math.abs(n) % 5;
 
+//   // If the remainder is 0, n is already a multiple of 5
+//   if (remainder === 0) {
+//     return n;
+//   }
+
+//   // Calculate the difference between 5 and the remainder
+//   const difference = 5 - remainder;
+//   console.log(difference)
+//   // Determine the sign of the result based on the sign of n
+//   const sign = n >= 0 ? 1 : -1;
+
+//   // Add the difference to n with the appropriate sign
+// const heheSign =   n + difference * sign;
+//   if(n == -1){
+//     return 0
+//   }
+//   else if (n < 0){
+//     return heheSign +5
+//   }
+//   else {
+//     return heheSign
+//   }
+// }
 
 // //  print Errors Codewars
 // function printerError(s) {
@@ -1278,49 +1270,67 @@
 
 // printerError("aaaxbbbbyyhwawiwjjjwwm")
 
+// // leetcode Roman Numerals
+// var romanToInt = function(s) {
+//   // try to answer this tom heheh
 
+//   const romanNumContainer = {
+//       I:1,
+//       V:5,
+//       X:10,
+//       L:50,
+//       C:100,
+//       D:500,
+//       M:1000,
+//       IX:9,
+//       IV:4
+//   }
+//   const UnusualNumReg = /(IV|IX)/g
 
-// leetcode Roman Numerals
-var romanToInt = function(s) {
-  // try to answer this tom heheh
+// if (s.match(UnusualNumReg)){
+// console.log("it works")
+// }
+// else{
+//   let RomanNumSplitted = s.split("")
+// console.log(RomanNumSplitted)
+// let blankArr = []
 
-  const romanNumContainer = {
-      I:1,
-      V:5,
-      X:10,
-      L:50,
-      C:100,
-      D:500,
-      M:1000,
-      IX:9,
-      IV:4
+// RomanNumSplitted.forEach((id) =>{
+//   if(id in romanNumContainer){
+//     blankArr.push(romanNumContainer[id])
+//   }
+// })
+
+// // we get sum here
+// const total = blankArr.reduce((acc, cur) => acc+cur)
+// console.log(total)
+
+// }
+
+// };
+
+// romanToInt("LVIII")
+
+function factorial(n) {
+  // Calculate the factorial here
+  if (n == 0 || n >= 12) {
+    // error handling
+    return RangeError;
   }
-  const UnusualNumReg = /(IV|IX)/g
 
+  // Main Algo
+  let endNumber = n;
+  let total = 0
+  for (i = n - 1; i < n; i--) {
+    if (i !== 0) {
+       endNumber *= i; 
 
-
-if (s.match(UnusualNumReg)){
-console.log("it works")
-}
-else{
-  let RomanNumSplitted = s.split("")
-console.log(RomanNumSplitted)
-let blankArr = []
-
-RomanNumSplitted.forEach((id) =>{
-  if(id in romanNumContainer){
-    blankArr.push(romanNumContainer[id])
+      total = endNumber
+    } else {
+      break;
+    }
   }
-})
-
-// we get sum here 
-const total = blankArr.reduce((acc, cur) => acc+cur)
-console.log(total)
-
+  console.log(total)
 }
 
-
-};
-
-
-romanToInt("LVIII")
+factorial(12);
