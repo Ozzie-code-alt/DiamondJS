@@ -1311,26 +1311,32 @@
 
 // romanToInt("LVIII")
 
-function factorial(n) {
-  // Calculate the factorial here
-  if (n == 0 || n >= 12) {
-    // error handling
-    return RangeError;
+// function factorial(n) {
+//   // Calculate the factorial here
+//   if (n == 0 || n >= 12) {
+//     // error handling
+//     return RangeError;
+//   }
+
+//   // Main Algo
+//   let endNumber = n;
+//   let total = 0
+//   for (i = n - 1; i < n; i--) {
+//     if (i !== 0) {
+//        endNumber *= i; 
+
+//       total = endNumber
+//     } else {
+//       break;
+//     }
+//   }
+//   console.log(total)
+// }
+
+// factorial(12);
+
+function makeNegative(num) {
+    return -Math.abs(num)
   }
 
-  // Main Algo
-  let endNumber = n;
-  let total = 0
-  for (i = n - 1; i < n; i--) {
-    if (i !== 0) {
-       endNumber *= i; 
-
-      total = endNumber
-    } else {
-      break;
-    }
-  }
-  console.log(total)
-}
-
-factorial(12);
+console.log
