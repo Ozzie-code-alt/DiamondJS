@@ -1335,8 +1335,21 @@
 
 // factorial(12);
 
-function makeNegative(num) {
-    return -Math.abs(num)
-  }
+// function makeNegative(num) {
+//     return -Math.abs(num)
+//   }
 
-console.log
+// console.log
+
+
+
+//Middle Value of an Array
+
+
+// function gimme (triplet) {
+//   const sortedCopye = [...triplet]
+//   const sorted = sortedCopye.sort((a , b) => b - a)
+//   const middleValue = sorted[1]
+  
+//   return triplet.indexOf(middleValue)
+//   }
